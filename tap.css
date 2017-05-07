@@ -1,0 +1,25 @@
+
+body {
+	background: #fff;
+  color: #555;
+  font-family: 'Montserrat', serif;
+}
+
+h2 a {
+  border: 3px solid #555;
+  color: #555;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+header {
+	margin: 0px auto;
+	padding: 0 20px;
+	max-width: 500px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
