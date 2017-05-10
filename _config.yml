@@ -1,12 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Tot al punt
+description: "Comida casera para llevar"
 baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://totalpunt.es/"
+tap:
+  twitter: "https://twitter.com/totalpunt"
+  instagram: "https://www.instagram.com/rostisseria_tot_al_punt/"
+  facebook: "https://www.facebook.com/totalpunt/"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude:
+    - node_modules

@@ -1,0 +1,25 @@
+desc 'Start Jekyll'
+task :serve do
+  sh 'jekyll serve --watch'
+end
+
+desc 'Open Safari'
+task :safari do
+  sh 'open /Applications/Safari.app/'
+end
+
+desc 'Open Sublime'
+task :sublime do
+  sh 'open /Applications/Sublime\ Text.app/'
+end
+
+desc 'Open url'
+task :url do
+  sh 'sleep 11 && open http://0.0.0.0:4000/ &'
+end
+
+desc 'Open alt'
+task :a => [:url, :sublime, :serve]
+
+desc 'Serve and view'
+task :s => [:url, :serve]
