@@ -5,3 +5,100 @@
   max-width: 64em;
   padding: 0 1em;
 }
+
+.home-menu {
+  margin: 1em 0;
+}
+
+.main-menu {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  > .menu-item {
+    flex: 1 1 33.3333%;
+  }
+  .tap-logo {
+    text-align: center;
+    img {
+      max-width: 100%;
+      width: 16em;
+    }
+  }
+}
+
+.main-content {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  > article {
+    flex: 1 1 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// .cover-image {
+
+// }
+
+.tap-intro {
+
+}
+
+// .tap-timetable {
+
+// }
+
+// .tap-social {
+
+// }
+
+.tap-catering {
+
+}
+
+.tap-map {
+
+}
+
+.home-footer {
+  background-color: $g16;
+  color: $w;
+  a {
+    color: $w;
+  }
+  > section {
+    display: flex;
+    justify-content: center;
+  }
+  address {
+    flex: 0 1 auto;
+    font-style: normal;
+    margin: 0 2em;
+    min-width: 20%;
+  }
+  .tap-whitelogo {
+    padding: 2em 0;
+    text-align: center;
+    img {
+      max-width: 100%;
+      width: 8em;
+    }
+  }
+  .social-media {
+    display: block;
+    padding-left: 1.5em;
+  }
+  .facebook {
+    background: url('/-/facebook.svg') 0 66% no-repeat;
+  }
+  .instagram {
+    background: url('/-/instagram.svg') 0 66% no-repeat;
+  }
+  .twitter {
+    background: url('/-/twitter.svg') 0 66% no-repeat;
+  }
+}

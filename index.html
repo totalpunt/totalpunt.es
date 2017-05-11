@@ -2,19 +2,25 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<main class="home-tap">
+<!--   <header class="cover-image">
+    IMAGE
+  </header> -->
+  <section class="main-content">
+    <article class="tap-intro">
+    <img src="/-/rostisseria.png">
+<!--       <section class="tap-extras">
+        <article class="tap-timetable">
+          HORARIO
+        </article>
+        <article class="tap-social">
+          SÍGUENOS
+        </article>
+      </section> -->
+    </article>
+    <article class="tap-catering">
+    <img src="/-/catering.png">
+    </article>
+  </section>
+   <article class="tap-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2993.9896034368485!2d2.0919693824425933!3d41.3743106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4990e8e9a9ebf%3A0xd4bca81c0fcec8de!2sTot+al+punt!5e0!3m2!1sen!2ses!4v1494482660923" width="100%" height="480" frameborder="0" style="border:0; pointer-events: none;" allowfullscreen></iframe></article>
+</main>
