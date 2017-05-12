@@ -8,8 +8,8 @@
 
 .home-menu {
   border-bottom: 1px solid $g96;
-  padding-bottom: 4em;
-  margin: 4em 0;
+  padding-bottom: 2em;
+  margin: 4em 0 0;
 }
 
 .main-menu {
@@ -154,7 +154,7 @@
     flex: 0 0 100%;
     font-style: normal;
     margin: 0 0 2em;
-    max-width: 75%;
+    max-width: 100%;
     @media all and (min-width: 48em) {
       flex: 0 1 auto;
       min-width: 25%;
@@ -164,7 +164,7 @@
     font-size: $f16;
     font-weight: 800;
     margin-bottom: 1em;
-    text-align: center;
+    xtext-align: center;
     text-transform: uppercase;
     @media all and (min-width: 48em) {
       text-align: left;
@@ -172,7 +172,7 @@
   }
   dd {
     margin-top: .25em;
-    text-align: center;
+    xtext-align: center;
     @media all and (min-width: 48em) {
       text-align: left;
     }
