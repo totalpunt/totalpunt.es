@@ -7,11 +7,11 @@
 }
 
 .home-menu {
-  margin: 1em 0;
+  margin: 4em 0;
 }
 
 .main-menu {
-  align-items: flex-start;
+  align-items: flex-end;
   display: flex;
   justify-content: space-around;
   margin: 0;
@@ -19,12 +19,38 @@
   text-align: center;
   > .menu-item {
     flex: 1 1 33.3333%;
+    dt {
+      font-size: $f14;
+      font-weight: 800;
+      margin-bottom: .5em;
+      text-transform: uppercase;
+    }
+    dd {
+      font-size: $f18;
+      font-weight: 800;
+      margin-bottom: .5em;
+    }
+  }
+  .call-me {
+    background: url('/-/phone.svg') 1.75em 50% no-repeat;
+    background-color: $g16;
+    border: 1px solid $g16;
+    border-radius: 3px;
+    color: $w;
+    padding: .375em 2em .375em 3.5em;
+    transition: all .125s;
+    &:hover {
+      background-color: $w;
+      border: 1px solid $g16;
+      color: $g16;
+      text-decoration: none;
+    }
   }
   .tap-logo {
     img {
       margin: 0 auto;
       max-width: 100%;
-      width: 16em;
+      width: 20em;
     }
   }
 }
@@ -84,7 +110,7 @@
 .home-footer {
   background-color: $g16;
   color: $w;
-  padding: 4em 0 8em;
+  padding: 4em 0;
   a {
     color: $w;
   }
@@ -97,7 +123,7 @@
   address {
     flex: 0 1 auto;
     font-style: normal;
-    margin: 0 0 4em;
+    margin: 0 0 2em;
     min-width: 25%;
   }
   dt {
