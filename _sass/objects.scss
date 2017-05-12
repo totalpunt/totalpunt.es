@@ -16,12 +16,13 @@
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  text-align: center;
   > .menu-item {
     flex: 1 1 33.3333%;
   }
   .tap-logo {
-    text-align: center;
     img {
+      margin: 0 auto;
       max-width: 100%;
       width: 16em;
     }
@@ -29,13 +30,13 @@
 }
 
 .main-content {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-around;
   > article {
-    flex: 1 1 50%;
     img {
+      margin: 0 auto;
       max-width: 100%;
+      @media all and (min-width: 41em) {
+        max-width: 50%;
+      }
     }
   }
 }
@@ -61,29 +62,56 @@
 }
 
 .tap-map {
-
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  @media all and (min-width: 41em) {
+    padding-bottom: 33.3333%;
+  }
+}
+.tap-map iframe,
+.tap-map object,
+.tap-map embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .home-footer {
   background-color: $g16;
   color: $w;
+  padding: 4em 0 8em;
   a {
     color: $w;
   }
   > section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 75%;
   }
   address {
     flex: 0 1 auto;
     font-style: normal;
-    margin: 0 2em;
-    min-width: 20%;
+    margin: 0 0 4em;
+    min-width: 25%;
+  }
+  dt {
+    font-size: $f14;
+    font-weight: 800;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  dd {
+    margin-top: .25em;
   }
   .tap-whitelogo {
-    padding: 2em 0;
-    text-align: center;
     img {
+      margin: 0 auto 4em;
       max-width: 100%;
       width: 8em;
     }

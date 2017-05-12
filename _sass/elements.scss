@@ -1,17 +1,14 @@
 // elements.scss: unclassed HTML elements (type selectors).
 
 // *:hover { background-color: $red !important; }
-
-// * {
-//   background-color: $red;
-// }
+// * { border: 1px solid $red !important; }
 
 html {
   background-color: $g99;
   box-sizing: border-box;
   color: $g24;
   font: 100%/1.5 'Muli', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  min-height: 100%;
+  height: 100%;
   @media all and (min-width: 96em) {
     font-size: 150%;
   }
@@ -43,4 +40,8 @@ dl, dt, dd {
 
 iframe {
 
+}
+
+img {
+  display: block;
 }
