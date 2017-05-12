@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="618px" height="106px" viewBox="0 0 618 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>logo_tap</title>
+    <title>tap</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="logo_tap" fill-rule="nonzero" fill="#000000">
+        <g id="tap" fill-rule="nonzero" fill="#444444">
             <path d="M11.383,92.471 C11.383,95.358 9.043,97.694 6.154,97.694 C3.261,97.694 0.923,95.358 0.923,92.471 C0.923,89.584 3.262,87.242 6.154,87.242 C9.042,87.242 11.383,89.584 11.383,92.471" id="Shape"></path>
             <polygon id="Shape" points="35.943 56.149 21.709 61.348 16.943 48.288 58.827 32.987 63.597 46.062 49.364 51.252 67.47 100.851 54.044 105.743"></polygon>
             <path d="M112.03,74.985 C122.232,72.602 128.562,61.627 125.998,50.676 C123.434,39.731 112.769,32.647 102.567,35.033 C92.274,37.445 86.055,48.488 88.617,59.434 C91.18,70.389 101.734,77.406 112.03,74.985 M99.375,21.4 C117.837,17.075 136.199,28.626 140.561,47.261 C144.915,65.823 133.676,84.302 115.222,88.629 C96.761,92.946 78.402,81.4 74.05,62.846 C69.688,44.203 80.913,25.728 99.375,21.4" id="Shape"></path>
