@@ -7,18 +7,32 @@
 }
 
 .home-menu {
+  border-bottom: 1px solid $g96;
+  padding-bottom: 4em;
   margin: 4em 0;
 }
 
 .main-menu {
-  align-items: flex-end;
+  align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
   padding: 0;
   text-align: center;
+  @media all and (min-width: 56em) {
+    flex-wrap: no-wrap;
+  }
   > .menu-item {
-    flex: 1 1 33.3333%;
+    flex: 0 0 100%;
+    margin-top: 2em;
+    @media all and (min-width: 48em) {
+      flex: 0 0 50%;
+      margin-top: 2em;
+    }
+    @media all and (min-width: 56em) {
+      flex: 1 1 33.3333%;
+    }
     dt {
       font-size: $f14;
       font-weight: 800;
@@ -27,30 +41,43 @@
     }
     dd {
       font-size: $f18;
-      font-weight: 800;
+      font-weight: 600;
       margin-bottom: .5em;
     }
   }
   .call-me {
-    background: url('/-/phone.svg') 1.75em 50% no-repeat;
-    background-color: $g16;
-    border: 1px solid $g16;
+    background: url('/-/phone.svg') -1em 60% no-repeat;
+    background-color: #96CC28;
+    border-bottom: 1px solid #87B824;
     border-radius: 3px;
     color: $w;
-    padding: .375em 2em .375em 3.5em;
-    transition: all .125s;
+    font-weight: 800;
+    padding: .375em 2em .25em;
+    transition: all .25s ease-out;
     &:hover {
-      background-color: $w;
-      border: 1px solid $g16;
-      color: $g16;
+      background: url('/-/phone.svg') 1.5em 60% no-repeat;
+      background-color: #87B824;
+      color: $w;
+      margin-top: 1px;
+      padding: .375em 2em .25em 3em;
       text-decoration: none;
     }
   }
   .tap-logo {
+    flex: 0 0 100%;
+    order: -1;
+    @media all and (min-width: 64em) {
+      flex: 1 1 33.3333%;
+      order: 0;
+    }
     img {
       margin: 0 auto;
       max-width: 100%;
       width: 20em;
+    }
+    p {
+      font-size: $f24;
+      font-weight: 600;
     }
   }
 }
@@ -60,8 +87,8 @@
     img {
       margin: 0 auto;
       max-width: 100%;
-      @media all and (min-width: 41em) {
-        max-width: 50%;
+      @media all and (min-width: 48em) {
+        max-width: 64%;
       }
     }
   }
@@ -84,7 +111,9 @@
 // }
 
 .tap-catering {
-
+  > img {
+    border-top: 2px solid #E57B80;
+  }
 }
 
 .tap-map {
@@ -93,7 +122,7 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  @media all and (min-width: 41em) {
+  @media all and (min-width: 48em) {
     padding-bottom: 33.3333%;
   }
 }
@@ -116,30 +145,43 @@
   }
   > section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     max-width: 75%;
   }
   address {
-    flex: 0 1 auto;
+    flex: 0 0 100%;
     font-style: normal;
     margin: 0 0 2em;
-    min-width: 25%;
+    max-width: 75%;
+    @media all and (min-width: 48em) {
+      flex: 0 1 auto;
+      min-width: 25%;
+    }
   }
   dt {
-    font-size: $f14;
+    font-size: $f16;
     font-weight: 800;
     margin-bottom: 1em;
+    text-align: center;
     text-transform: uppercase;
+    @media all and (min-width: 48em) {
+      text-align: left;
+    }
   }
   dd {
     margin-top: .25em;
+    text-align: center;
+    @media all and (min-width: 48em) {
+      text-align: left;
+    }
   }
   .tap-whitelogo {
     img {
       margin: 0 auto 4em;
       max-width: 100%;
-      width: 8em;
+      width: 10em;
     }
   }
   .social-media {
@@ -147,7 +189,7 @@
     padding-left: 1.5em;
   }
   .facebook {
-    background: url('/-/facebook.svg') 0 66% no-repeat;
+    background: url('/-/facebook.svg') 0   50% no-repeat;
   }
   .instagram {
     background: url('/-/instagram.svg') 0 66% no-repeat;
